@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
         strcpy(argv[0], "FPChrono");
         printf("[MAIN]Lancement de FPChrono \n");
         execv("../bin/FPChrono", argv);
+        execl("/usr/bin/xterm","xterm","../bin/FPChrono",NULL);
     }
     
     else{
@@ -38,6 +39,7 @@ int main(int argc, char *argv[])
 		strcpy(argv[0], "FPAlarm");
 		printf("[MAIN]Lancement de FPAlarm \n");
 		execv("../bin/FPAlarm", argv);
+		execl("/usr/bin/xterm","xterm","../bin/FPAlarm",NULL);
 	    }
 	    
 	    
@@ -46,6 +48,7 @@ int main(int argc, char *argv[])
 		strcpy(argv[0], "FPConf");
 		printf("[MAIN]Lancement de FPConf \n");
 		execv("../bin/FPConf", argv);
+		execl("/usr/bin/xterm", "xterm", "../bin/FPConf", NULL);
 	    }
     }
    
