@@ -45,18 +45,21 @@ int main(void)
 		    		argv[0] = "FPChrono";
 				argv[2]= NULL;
 				execv("./FPChrono", argv);
+				execl("/usr/bin/xterm", "xterm", "./FPChrono", NULL);
 		    		break;
 			    
 			    case 2 :
 				argv[0] = "FPAlarm";
 				argv[2]= NULL;
 				execv("./FPAlarm", argv);
+				execl("/usr/bin/xterm", "xterm", "./FPAlarm", NULL);
 			    	break;
 				    
 			    case 3 :    
 				argv[0] = "FPAffHD";
 		    		argv[2]= NULL;
 				execv("./FPAffHD", argv);
+				execl("/usr/bin/xterm", "xterm", "./FPAffHD", NULL);
 			    	break;
 				
 			    default :    
